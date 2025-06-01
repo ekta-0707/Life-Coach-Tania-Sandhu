@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Tania Sandhu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+        <span>Tania Sandhu | Life Coach</span>
+      </div>
+      <button class="hamburger">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="services">
+      <h2>💫 Work With Me</h2>
+      <p class="intro">You’re not here by accident. You’re ready for more—and I’m here to help.<br>
+      I offer three powerful paths of support and transformation:
+      </p>
+
+      <div class="divider">⸻</div>
+
+      <div class="service-block">
+        <h3>🔹 Life Coaching</h3>
+        <p class="highlight">For adults and teens ready to:</p>
+        <ul>
+          <li>Break free from limiting beliefs</li>
+          <li>Build faith, focus, and emotional strength</li>
+          <li>Step into a more aligned, confident version of themselves</li>
+          <li>Manifest dreams and goals with intention and clarity</li>
+        </ul>
+        <p><span class="highlight">Ideal for:</span> Individuals seeking mindset growth, emotional healing, personal development, and spiritual alignment.</p>
+      </div>
+
+      <div class="divider">⸻</div>
+
+      <div class="service-block">
+        <h3>🔹 Behavioral Consulting</h3>
+        <p class="highlight">For children and young adults (ages 3–22):</p>
+        <ul>
+          <li>Personalized support in communication, behavior, and daily routines</li>
+          <li>Skill-building rooted in compassion and consistency</li>
+          <li>Family collaboration to create lasting success beyond sessions</li>
+        </ul>
+        <p><span class="highlight">Ideal for:</span> Families looking for a patient, experienced, and intentional professional to support their child’s development.</p>
+      </div>
+
+      <div class="divider">⸻</div>
+
+      <div class="service-block">
+        <h3>🔹 Journey to Success Series</h3>
+        <p class="highlight">6-Week Program for Young Minds:</p>
+        <ul>
+          <li><strong>Week 1:</strong> Self Discovery – Ice breakers, self-assessment, understanding strengths.</li>
+          <li><strong>Week 2:</strong> Building a Stronger Connection – Communication, active listening, social etiquette.</li>
+          <li><strong>Week 3:</strong> Mapping Your Future – SMART goals, planning, discipline.</li>
+          <li><strong>Week 4:</strong> Navigating Challenges – Team problem-solving, strategic thinking.</li>
+          <li><strong>Week 5:</strong> Balancing Act – Time management, organization, reducing stress.</li>
+          <li><strong>Week 6:</strong> Celebrating Progress – Talent show, program recap, certificate awards.</li>
+        </ul>
+        <p><span class="highlight">Ideal for:</span> Kids and teens who benefit from group-based, guided development and life skill building.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Tania Sandhu Life Coach |
+    <a href="mailto:Tiaservicesltd@gmail.com" style="color: #aaa; text-decoration: none;">
+      Tiaservicesltd@gmail.com
+    </a>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fffaf5;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #5a2653;
+  color: #fff;
+  padding: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header img {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Hero Section */
+.hero {
+  background: url("background.jpg") no-repeat top center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  margin-top: 80px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  text-align: center;
+  color: #5a2653;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about,
+.services,
+.testimonials {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #5a2653;
+}
+
+.services ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.services li {
+  background: #fcbf49;
+  color: #222;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Testimonials */
+.testimonials blockquote {
+  border-left: 4px solid #5a2653;
+  padding-left: 15px;
+  margin: 20px auto;
+  font-style: italic;
+  color: #555;
+  max-width: 700px;
+}
+
+/* Contact Form */
+.contact-section {
+  background: #fff;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #5a2653;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #461d41;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.cta button {
+  background-color: #fcbf49;
+  color: #222;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+  background-color: #e0a735;
+}
+
+/* Footer */
+footer {
+  background-color: #5a2653;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #fcbf49;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+/* NAVBAR */
+.navbar {
+  position: relative;
+  top: 0;
+  z-index: 1000;
+  background-color: #5a2653;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Hamburger */
+.hamburger {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+  margin-left: 299px;
+  transform: translateY(-50px);
+  position: absolute;
+  right: 10px;
+  
+}
+
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #fcbf49;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    background-color: #5a2653;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .nav-links.show {
+    max-height: 300px;
+  }
+}

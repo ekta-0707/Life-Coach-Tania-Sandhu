@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiaborealis - Life Coach Tania Sandhu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico.png" type="image/x-icon" />
+    <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+ <header>
+  
+    <nav class="navbar">
+  <div class="logo">
+     <img src="logo.png" alt="Tania Sandhu Logo" />
+      <span>Tania Sandhu | Life Coach</span>
+  </div>
+
+  <button class="hamburger" aria-label="Toggle Menu">&#9776;</button>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+  </div>
+</header>
+
+    <section id="hero" class="hero">
+      <div>
+        <h1>Empower Your Life Today</h1>
+        <p>
+          Live coaching tailored to unlock your potential, boost confidence, and
+          create lasting change.
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <section id="about" class="about">
+        <h2>About Tania</h2>
+        <p>
+          Hi, I’m Tania Arora — a life coach, behavioral consultant, and soul on
+          a mission.
+        </p>
+        <p>
+          I help people reconnect with their true selves—beyond pressure and
+          expectations. From guiding neurodiverse children to coaching adults
+          through mindset shifts, my mission is to empower you to live with
+          clarity, confidence, and purpose.
+        </p>
+        <p>
+          Born in India, now in Canada, my work blends compassion, cultural
+          insight, and conscious transformation. Whether through 1:1 coaching,
+          my podcast Pilgrimage with Tia, or my book Brown Boundaries, I’m here
+          to support your journey home—to yourself.
+        </p>
+        <p>Let’s begin.</p>
+      </section>
+
+      <section id="services" class="services">
+        <h2>Services</h2>
+        <ul>
+          <li>Journey to Success Series</li>
+          <li>Behavioral Consulting</li>
+          <li>Life Coach</li>
+        </ul>
+      </section>
+
+      <section id="testimonials" class="testimonials">
+        <h2>What Clients Say</h2>
+        <blockquote>
+          “Tania has a gift. She sees you—your potential, your patterns, your
+          power—and helps you step into it with so much grace. Working with her
+          changed the way I see myself.” — S.K., Life Coaching Client
+        </blockquote>
+        <blockquote>
+          “My son has made so much progress since working with Tania. She is
+          patient, creative, and truly understands how to support kids with
+          unique needs. We feel incredibly lucky to have her.” — M.R., Parent of
+          Client (Behavioral Consulting)
+        </blockquote>
+        <blockquote>
+          “Tania helped me shift from feeling lost and stuck to feeling grounded
+          and clear. Her coaching isn’t just mindset—it’s soulful and practical.
+          I’ve never felt more aligned.” — A.D., Life Coaching Client
+        </blockquote>
+        <blockquote>
+          “Tania meets every child where they are. She made learning fun and
+          safe for my daughter, and always took time to check in with us as
+          parents. She brings so much heart to her work.” — J.L., Parent of
+          Client (Behavioral Consulting)
+        </blockquote>
+      </section>
+    </main>
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <p>
+        If you have questions or want to schedule a session, feel free to reach
+        out.
+      </p>
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        class="contact-form"
+        autocomplete="on"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" autocomplete="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" autocomplete="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="cta">
+      <button onclick="window.location.href='contact.html'">
+        Book Your Free Consultation
+      </button>
+    </section>
+
+    <footer>
+      &copy; 2025 Tania Sandhu Life Coach |
+      <a
+        href="mailto:Tiaservicesltd@gmail.com"
+        style="color: #aaa; text-decoration: none"
+        >Tiaservicesltd@gmail.com</a
+      >
+    </footer>
+  <script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+  </body>
+</html>
