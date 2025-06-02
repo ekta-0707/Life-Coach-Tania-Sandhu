@@ -30,7 +30,7 @@ header img {
 
 /* Hero Section */
 .hero {
-  background: url("background.jpg") no-repeat top center/cover;
+  background: url("background1.jpg") no-repeat top center/cover;
   height: 90vh;
   display: flex;
   align-items: center;
